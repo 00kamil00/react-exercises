@@ -1,38 +1,42 @@
-# React Examples
+# React Exercises & Mini-Projects
 
-This repository houses React examples used as part of The Odin Project's React course.
+Personal repository containing solutions, hands-on tasks, and concept practice completed during **The Odin Project** React curriculum.
 
-## How To Add A React Example
+The project is structured as a monorepo workspace where each directory contains a standalone React module demonstrating core framework patterns.
 
-These steps should only be done if a maintainer has assigned you to make a new React example for a lesson. This will only happen as part of a discussion in an issue in our [curriculum repo](https://github.com/TheOdinProject/curriculum).
+---
 
-1. Read through the [contributing guide](https://github.com/TheOdinProject/.github/blob/main/CONTRIBUTING.md#curriculum-structure).
-1. Make sure you have Node and npm installed. You may use the [Installing Node.js](https://www.theodinproject.com/lessons/foundations-installing-node-js) lesson to install these tools.
-1. Fork & clone this repository. Install dependencies by running `npm install`.
-1. Create a new example folder by copying the `boilerplate` folder, then `cd` into it. You do not need to add dependencies or npm scripts as these are shared in the repo root.
+## 📁 Repository Overview
 
+* **`state/`**  
+  Component-level state handling using the `useState` hook. Includes interactive state changes, re-rendering triggers, and event counters.
+
+* **`fetching-data/`**  
+  Asynchronous workflows in React: calling external REST APIs (using Fetch/Axios), handling promises inside `useEffect`, and managing loading and error states in the UI.
+
+* **`memoization/`**  
+  React performance optimization: preventing unnecessary re-renders with `React.memo`, memoizing expensive calculations via `useMemo`, and caching callback definitions with `useCallback`.
+
+* **`class-components/`**  
+  Working with legacy React class syntax, lifecycle methods (`componentDidMount`, `componentDidUpdate`), and understanding how class state translates to modern functional hooks.
+
+* **`boilerplate/`**  
+  Clean Vite + React template used as a base scaffold to quickly generate new isolated exercise environments.
+
+---
+
+## 🛠️ Stack & Tooling
+
+* **Framework & UI:** React (Functional Components, Hooks)
+* **Build Tool:** Vite
+* **Code Quality:** ESLint, Prettier
+* **Package Manager:** npm
+
+---
+
+## 🚀 Setup & Running Locally
+
+1. **Clone this repository:**
    ```bash
-   cp -R ./boilerplate ./<example-name>
-   cd ./<example-name>
-   ```
-
-1. Code out your example.
-1. Start the dev server with `npm run dev` to make sure the example runs as expected. Make sure you are in the example directory (not a subdirectory or the repo root) when you run this.
-1. Run `npm run lint` for ESLint and Prettier to lint and format the code.
-1. Create a pull request. Make sure to provide a link to the PR in the curriculum repo for the associated lesson changes (if you make this PR first, you can edit the curriculum PR link in once done).
-
-### Naming Examples
-
-Make sure that examples are clearly named, meaning they should convey what the example is about on a glance. Examples:
-
-```c
-// bad
-example-1
-state-example
-arrays
-
-// good
-hello-world
-passing-props
-rendering-arrays-in-jsx
-```
+   git clone [https://github.com/00kamil00/react-exercises.git](https://github.com/00kamil00/react-exercises.git)
+   cd react-exercises
